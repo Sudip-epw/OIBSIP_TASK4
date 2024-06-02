@@ -1,0 +1,135 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "poppins", sans-serif;
+}
+body {
+  overflow: hidden;
+  height: 100vh;
+  background-color: #c7c7c7;
+  background: linear-gradient(45deg, rgb(255, 13, 0), rgb(0, 51, 255));
+}
+.container {
+  background: rgba(0, 0, 0, 0.336);
+  width: 450px;
+  padding: 1.5rem;
+  margin: 150px auto;
+  border-radius: 10px;
+  outline: 1px groove white;
+  box-shadow: 0px 0px 6px white;
+}
+form {
+  margin: 0 10px;
+}
+.form-title {
+  color: rgb(245, 245, 245);
+  font-size: 27px;
+  font-weight: bold;
+  text-align: center;
+  padding: 10px;
+  margin-bottom: 25px;
+}
+input {
+  color: white;
+  width: 100%;
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid #787878;
+  padding-left: 1.5rem;
+  font-size: 15px;
+}
+.input-group {
+  background: transparent;
+  padding: 7px 0;
+  position: relative;
+}
+.input-group i {
+  position: absolute;
+  color: rgb(76, 216, 0);
+}
+input:focus {
+  background-color: transparent;
+  outline: transparent;
+  border-bottom: 2px solid rgb(255, 94, 35);
+}
+input::placeholder {
+  color: transparent;
+}
+label {
+  color: #f4f4f4;
+  position: relative;
+  left: 22px;
+  top: -19px;
+  cursor: pointer;
+  transition: 0.3s ease all;
+}
+input:focus ~ label,
+input:not(:placeholder-shown) ~ label {
+  top: -3em;
+  color: rgb(246, 86, 17);
+  font-size: 15px;
+}
+.recover {
+  text-align: right;
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+.recover a {
+  text-decoration: none;
+  color: rgb(30, 221, 9);
+}
+.recover a:hover {
+  color: rgb(233, 75, 23);
+  text-decoration: underline;
+}
+button {
+  font-size: 1.1rem;
+  padding: 8px 0;
+  border-radius: 5px;
+  outline: none;
+  border: none;
+  width: 100%;
+  background: rgb(50, 194, 6);
+  color: white;
+  cursor: pointer;
+  transition: 0.6s;
+}
+button:hover {
+  background: #0c2f00;
+}
+
+.links {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 10px 20px;
+  margin-top: 10px;
+  font-weight: bold;
+  color: #fff;
+  /* gap: 10px; */
+}
+#signUpButton,
+#signInButton {
+  width: 80px;
+  color: rgb(3, 186, 6);
+  border: none;
+  background-color: transparent;
+  font-size: 18px;
+  font-weight: bold;
+}
+#signUpButton:hover,
+#signInButton:hover {
+  text-decoration: underline;
+  color: rgb(221, 103, 7);
+}
+.messageDiv {
+  background-color: rgb(232, 21, 21);
+  color: white;
+  padding: 10px 20px;
+  margin: 10px;
+  border-radius: 5px;
+  font-size: 1rem;
+  opacity: 0;
+  animation: fadeOut 7s forwards;
+}
